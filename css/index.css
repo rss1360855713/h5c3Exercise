@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.clearfix:before, .clearfix:after {
+	Content: "";
+	Display: table;
+}
+.clearfix:after {
+	Clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+header{
+    background-color: #666;
+    height: 60px;
+}
+.main{
+    width: 1090px;
+    margin: 0 auto;
+}
+.h-li li{
+    list-style: none;
+    display: inline-block;
+    line-height: 60px;
+    margin-right: 20px;
+    color: #fff;
+}
+.nav-li li{
+    list-style: none;
+    display: inline-block;
+    height: 64px;
+    margin: 0;
+}
+.nav-li li img {
+    vertical-align: middle;
+}
+.nav-li li a {
+    display: inline-block;
+    line-height: 64px;
+    color: #666;
+    margin: 0 15px;
+}
+.line-x{
+    transform-origin: top;
+    transform: rotate(30deg) ;
+    margin: 0 20px;
+    height: 70px;
+    box-shadow: #666 -2px -10px 5px;
+}
+aside{
+    width: 212px;
+    height: 600px;
+}
+.center{
+    width: 666px;
+}
+.content div,.content aside{
+    float: left;
+}
+.one {
+    height: 40px; 
+    background-color:#d03800;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+.one a{
+    color:#fff;
+}
+.red {
+    height: 5px;
+    width: 212px;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+.list {
+    position: relative;
+    padding: 11px 10px;
+    background-color: #cccccc;
+}
+
+.list a {
+    font-size: 12px;
+}
+.list span{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    right: 10px;
+}
+.centerImg{
+    width: 666px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.center-img{
+    width: 2664px;
+}
+.center-img li{
+    float: left;
+}
+.centerImgBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.centerImgBottom li {
+    float: left;
+    height: 30px;
+    width: 165px;
+    margin-right: 2px; 
+    background-color: rgba(0,0,0,.3);
+    text-align: center;
+}
+.centerImgBottom li a {
+    color: #fff;
+
+    line-height: 30px;
+    font-size: 12px;
+}
+.centerImgBottom li:last-child{
+    margin-right: 0px; 
+}
+.centerBottom img{
+    vertical-align: top;
+}
+.centerBottom {
+    width: 666px;
+    height: 300px;
+    /* overflow: hidden; */
+}
+.centerBottom div{
+    float: left;
+    width: 222px;
+    height: 300px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.lineImg img{
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.search{
+    height: 300px;
+    width: 100%;
+    background-color: red;
+}
+.enter{
+    height: 300px;
+    width: 100%;
+    background-color: #ccc;
+}
+.searchBox{
+    width: 180px;
+    margin-left: 16px;
+    height: 150px;
+    background-color: #fff;
+}

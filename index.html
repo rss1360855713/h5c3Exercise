@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <ul class="h-li">
+                <li>赚彩贝</li>
+                <li>花彩贝</li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <div class="main">
+            <ul class="nav-li">
+                <li><a href=""><img src="img/logo_170x46.png" alt=""></a></li>
+                <li><img src="img/repeatx.png" alt="" height = "" class="line-x"></li>
+                <li><a href="">返利商城</a></li>
+                <span>/</span>
+                <li><a href="">商旅频道</a></li>
+                <li><img src="img/repeatx.png" alt="" height = "" class="line-x"></li>
+                <li><a href="">积分商城</a></li>
+                <li><img src="img/repeatx.png" alt="" height = "" class="line-x"></li>
+                <li><a href="">了解彩贝</a></li>
+                <span>/</span>
+                <li><a href="">彩贝活动</a></li>
+                <span>/</span>
+                <li><a href="">个人中心</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main content clearfix">
+        <aside>
+            <ul>
+                <li class="one"><a href="#">购物返彩贝商家</a></li>
+                <li class="red"><img src="img/index.png" alt=""></li>
+                <li class="list">
+                    <h5>数码家电</h5>
+                    <a href="">京东</a>
+                    <a href="">易迅</a>
+                    <a href="">苏宁易购</a>
+                    <span>&gt;</span>
+                </li>
+                <li class="list">
+                    <h5>数码家电</h5>
+                    <a href="">京东</a>
+                    <a href="">易迅</a>
+                    <a href="">苏宁易购</a>
+                    <span>&gt;</span>
+                </li>
+                <li class="list">
+                    <h5>数码家电</h5>
+                    <a href="">京东</a>
+                    <a href="">易迅</a>
+                    <a href="">苏宁易购</a>
+                    <span>&gt;</span>
+                </li>
+                <li class="list">
+                    <h5>数码家电</h5>
+                    <a href="">京东</a>
+                    <a href="">易迅</a>
+                    <a href="">苏宁易购</a>
+                    <span>&gt;</span>
+                </li>
+                <li class="list">
+                    <h5>数码家电</h5>
+                    <a href="">京东</a>
+                    <a href="">易迅</a>
+                    <a href="">苏宁易购</a>
+                    <span>&gt;</span>
+                </li>
+                <li class="list">
+                    <h5>数码家电</h5>
+                    <a href="">京东</a>
+                    <a href="">易迅</a>
+                    <a href="">苏宁易购</a>
+                    <span>&gt;</span>
+                </li>
+                <li class="list">
+                    <h5>数码家电</h5>
+                    <a href="">京东</a>
+                    <a href="">易迅</a>
+                    <a href="">苏宁易购</a>
+                    <span>&gt;</span>
+                </li>
+                <li class="list">
+                    <h5>数码家电</h5>
+                    <a href="">京东</a>
+                    <a href="">易迅</a>
+                    <a href="">苏宁易购</a>
+                    <span>&gt;</span>
+                </li>
+                <li class="list">
+                    <h5>数码家电</h5>
+                    <a href="">京东</a>
+                    <a href="">易迅</a>
+                    <a href="">苏宁易购</a>
+                    <span>&gt;</span>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="center">
+            <div class="centerImg">
+                <ul class="center-img clearfix">
+                    <li><img src="img/focus1.jpg" alt=""></li>
+                    <li><img src="img/focus2.jpg" alt=""></li>
+                    <li><img src="img/focus3.jpg" alt=""></li>
+                    <li><img src="img/focus4.jpg" alt=""></li>
+                </ul>
+                <ul class="centerImgBottom clearfix">
+                    <li><a href="">音乐消暑 冰爽一夏</a></li>
+                    <li><a href="">音乐消暑 冰爽一夏</a></li>
+                    <li><a href="">音乐消暑 冰爽一夏</a></li>
+                    <li><a href="">音乐消暑 冰爽一夏</a></li>
+                </ul>
+            </div>
+            <div class="centerBottom clearfix">
+                <div>
+                    <img src="img/m1.jpg" alt="">
+                </div>
+                <div class="lineImg">
+                    <img src="img/m2.jpg" alt="">
+                    <img src="img/m3.jpg" alt="">
+                </div>
+                <div class="lineImg">
+                    <img src="img/m4.jpg" alt="">
+                    <img src="img/m5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <aside>
+            <div class="search">
+                <div class="searchBox">
+                    <h1>高级搜索</h1>
+                    <input type="text">
+                    <button>搜索</button>
+                </div>
+            </div>
+            <div class="enter"></div>
+        </aside>
+    </div>
+    <div id="imgContent">
+
+    </div>
+
+    <script>
+        // $.ajax({
+        //     type:"get",
+        //     url:"data.txt",
+        //     dataType:"json",
+        //     success:function(data){
+        //         let dataArr = data;
+        //         console.log(data);
+        //         $("#imgContent").innerHTML = dataArr;
+        //     }
+        // })
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4){
+                let dataArr = JSON.stringify(this.responseText);
+                document.getElementById("imgContent").innerHTML = dataArr;
+                
+            }
+        }
+        xhr.open("GET","data.txt",true);
+        xhr.send();
+    </script>
+</body>
+</html>
