@@ -1,4 +1,5 @@
-//模拟数据
+$(function(){
+	PBL('showpic','box');
 	var data = [
 		[
 			{'src':'img/pbl/5.jpg','title':'采用顶级的羊皮材料，更时尚，更有格调！搭配秋冬服饰更有独特的韵味！'},
@@ -81,3 +82,88 @@
 			{'src':'img/pbl/68.jpg','title':'不同色彩的拼接，彰显潮流风尚，无形中增添了几分青春活力。'},
 		]
 	];
+	var indexScroll = 0;
+	var scrollB = true;
+
+	$(window).scroll(function(){
+		if(!scrollB) return;
+		if(getCheck()){
+			scrollB = false;
+			setTimeout(function(){
+				for(i in data[indexScroll]){
+					var newHtml = $('<div class="box"><div class="info"><div class="pic"><img src="'+data[indexScroll][i].src+'"/></div><div class="title">'+data[indexScroll][i].title+'</div></div></div>');
+					$('#showpic').append(newHtml);
+				}
+				setTimeout(function(){
+					PBL('showpic','box');
+					indexScroll++;
+					scrollB = true;
+					if(indexScroll==data.length){
+						scrollB = false;
+					}
+				},200);
+			},10);
+		}
+    });
+    
+    function PBL(wrap,box){
+        var wrap = document.getElementById(wrap);
+        var boxs  = getClass(wrap,box);
+        var boxW = boxs[0].offsetWidth;
+        var colsNum = 4;
+        wrap.style.width = boxW*colsNum+'px';
+        var everyH = [];
+        for (var i = 0; i < boxs.length; i++) {
+            if(i<colsNum){
+                everyH[i] = boxs[i].offsetHeight;
+            }else{
+                var minH = Math.min.apply(null,everyH);
+                var minIndex = getIndex(minH,everyH);
+                getStyle(boxs[i],minH,boxs[minIndex].offsetLeft,i);
+                everyH[minIndex] += boxs[i].offsetHeight;
+            }
+        }
+        var maxH = Math.max.apply(null,everyH);
+        wrap.style.height=maxH+"px";
+    }
+    
+    function getClass(wrap,className){
+        var obj = wrap.getElementsByTagName('*');
+        var arr = [];
+        for(var i=0;i<obj.length;i++){
+            if(obj[i].className == className){
+                arr.push(obj[i]);
+            }
+        }
+        return arr;
+    }
+   
+    function getIndex(minH,everyH){
+        for(index in everyH){
+            if (everyH[index] == minH ) return index;
+        }
+    }
+    function getCheck(){
+        var documentH = document.documentElement.clientHeight;
+        var scrollH = document.documentElement.scrollTop || document.body.scrollTop;
+        return documentH+scrollH>=getLastH() ?true:false;
+    }
+    
+    function getLastH(){
+        var wrap = document.getElementById('showpic');
+        var boxs = getClass(wrap,'box');
+        return $(boxs[boxs.length-1]).offset().top+boxs[boxs.length-1].offsetHeight-100;
+    }
+   
+    var getStartNum = 0;
+    function getStyle(box,top,left,index){
+        if (getStartNum>=index) return;
+        $(box).css({
+            'position':'absolute',
+            'top':top,
+            "left":left
+        });
+        getStartNum = index;
+    }
+});
+

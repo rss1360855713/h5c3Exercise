@@ -5,36 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/pbl.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="main">
             <ul class="h-li">
-                <li>赚彩贝</li>
-                <li>花彩贝</li>
+                <li><a href="">赚彩贝</a></li>
+                <li><a href="">花彩贝</a></li>
             </ul>
         </div>
     </header>
-    <nav>
-        <div class="main">
-            <ul class="nav-li">
-                <li><a href=""><img src="img/logo_170x46.png" alt=""></a></li>
-                <li><img src="img/repeatx.png" alt="" height = "" class="line-x"></li>
-                <li><a href="">返利商城</a></li>
-                <span>/</span>
-                <li><a href="">商旅频道</a></li>
-                <li><img src="img/repeatx.png" alt="" height = "" class="line-x"></li>
-                <li><a href="">积分商城</a></li>
-                <li><img src="img/repeatx.png" alt="" height = "" class="line-x"></li>
-                <li><a href="">了解彩贝</a></li>
-                <span>/</span>
-                <li><a href="">彩贝活动</a></li>
-                <span>/</span>
-                <li><a href="">个人中心</a></li>
-            </ul>
-        </div>
-    </nav>
+    <section class="menu">
+		<div class="wrap">
+			<a href="" class="logo left"><span>QQ彩贝积分</span></a>
+			<div class="nav-menu left">
+				<div class="menu-main left">
+					<span class="menu-tag menu-tagz">赚积分</span>
+					<ul class="menu-con">
+						<li>
+							<a href="" class="item-mall">返回商城</a>
+						</li>
+						<li>
+							<a href="" class="item_travel">商旅频道</a>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-main left">
+					<span class="menu-tag menu-tagh">花积分</span>
+					<ul class="menu-con">
+						<li>
+							<a href="" class="item_gmall">积分商城</a>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-main left">
+					<ul class="menu-con">
+						<li>
+							<a href="" class="item_about">了解彩贝</a>
+						</li>
+						<li>
+							<a href="" class="item_act">彩贝活动</a>
+						</li>
+						<li>
+							<a href="" class="item_i ">个人中心</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="menu-r right">
+				<a href="" class="icon-bbs"></a>
+				<a href="" class="icon-wb"></a>
+				<a href="" class="icon-mail"></a>
+			</div>
+		</div>
+	</section>
     <div class="main content clearfix">
         <aside>
             <ul>
@@ -46,6 +73,39 @@
                     <a href="">易迅</a>
                     <a href="">苏宁易购</a>
                     <span>&gt;</span>
+                    <div class="menu-panel">
+                        <div class="menu-panel-hd">
+                            <h4>热门分类</h4>
+                            <div class="sub-group">
+                                <a href="">美食特产</a>
+                                <a href="">酒水茶叶</a>
+                                <a href="">蛋糕预订</a>
+                            </div>
+                        </div>
+                        <div class="menu-panel-bd">
+                            <ul>
+                                <li>
+                                    <a href=""><img src="img/0.png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (1).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (2).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (3).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0.jpg"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="" class="menu-panel-btn">
+                            <span>查看全部商家</span>
+                            <em></em>
+                        </a>
+                    </div>
                 </li>
                 <li class="list">
                     <h5>数码家电</h5>
@@ -53,6 +113,39 @@
                     <a href="">易迅</a>
                     <a href="">苏宁易购</a>
                     <span>&gt;</span>
+                    <div class="menu-panel">
+                        <div class="menu-panel-hd">
+                            <h4>热门分类</h4>
+                            <div class="sub-group">
+                                <a href="">美食特产</a>
+                                <a href="">酒水茶叶</a>
+                                <a href="">蛋糕预订</a>
+                            </div>
+                        </div>
+                        <div class="menu-panel-bd">
+                            <ul>
+                                <li>
+                                    <a href=""><img src="img/0.png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (1).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (2).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (3).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0.jpg"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="" class="menu-panel-btn">
+                            <span>查看全部商家</span>
+                            <em></em>
+                        </a>
+                    </div>
                 </li>
                 <li class="list">
                     <h5>数码家电</h5>
@@ -60,6 +153,39 @@
                     <a href="">易迅</a>
                     <a href="">苏宁易购</a>
                     <span>&gt;</span>
+                    <div class="menu-panel">
+                        <div class="menu-panel-hd">
+                            <h4>热门分类</h4>
+                            <div class="sub-group">
+                                <a href="">美食特产</a>
+                                <a href="">酒水茶叶</a>
+                                <a href="">蛋糕预订</a>
+                            </div>
+                        </div>
+                        <div class="menu-panel-bd">
+                            <ul>
+                                <li>
+                                    <a href=""><img src="img/0.png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (1).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (2).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (3).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0.jpg"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="" class="menu-panel-btn">
+                            <span>查看全部商家</span>
+                            <em></em>
+                        </a>
+                    </div>
                 </li>
                 <li class="list">
                     <h5>数码家电</h5>
@@ -67,6 +193,39 @@
                     <a href="">易迅</a>
                     <a href="">苏宁易购</a>
                     <span>&gt;</span>
+                    <div class="menu-panel">
+                        <div class="menu-panel-hd">
+                            <h4>热门分类</h4>
+                            <div class="sub-group">
+                                <a href="">美食特产</a>
+                                <a href="">酒水茶叶</a>
+                                <a href="">蛋糕预订</a>
+                            </div>
+                        </div>
+                        <div class="menu-panel-bd">
+                            <ul>
+                                <li>
+                                    <a href=""><img src="img/0.png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (1).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (2).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (3).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0.jpg"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="" class="menu-panel-btn">
+                            <span>查看全部商家</span>
+                            <em></em>
+                        </a>
+                    </div>
                 </li>
                 <li class="list">
                     <h5>数码家电</h5>
@@ -74,6 +233,39 @@
                     <a href="">易迅</a>
                     <a href="">苏宁易购</a>
                     <span>&gt;</span>
+                    <div class="menu-panel">
+                        <div class="menu-panel-hd">
+                            <h4>热门分类</h4>
+                            <div class="sub-group">
+                                <a href="">美食特产</a>
+                                <a href="">酒水茶叶</a>
+                                <a href="">蛋糕预订</a>
+                            </div>
+                        </div>
+                        <div class="menu-panel-bd">
+                            <ul>
+                                <li>
+                                    <a href=""><img src="img/0.png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (1).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (2).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (3).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0.jpg"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="" class="menu-panel-btn">
+                            <span>查看全部商家</span>
+                            <em></em>
+                        </a>
+                    </div>
                 </li>
                 <li class="list">
                     <h5>数码家电</h5>
@@ -81,6 +273,39 @@
                     <a href="">易迅</a>
                     <a href="">苏宁易购</a>
                     <span>&gt;</span>
+                    <div class="menu-panel">
+                        <div class="menu-panel-hd">
+                            <h4>热门分类</h4>
+                            <div class="sub-group">
+                                <a href="">美食特产</a>
+                                <a href="">酒水茶叶</a>
+                                <a href="">蛋糕预订</a>
+                            </div>
+                        </div>
+                        <div class="menu-panel-bd">
+                            <ul>
+                                <li>
+                                    <a href=""><img src="img/0.png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (1).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (2).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (3).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0.jpg"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="" class="menu-panel-btn">
+                            <span>查看全部商家</span>
+                            <em></em>
+                        </a>
+                    </div>
                 </li>
                 <li class="list">
                     <h5>数码家电</h5>
@@ -88,6 +313,39 @@
                     <a href="">易迅</a>
                     <a href="">苏宁易购</a>
                     <span>&gt;</span>
+                    <div class="menu-panel">
+                        <div class="menu-panel-hd">
+                            <h4>热门分类</h4>
+                            <div class="sub-group">
+                                <a href="">美食特产</a>
+                                <a href="">酒水茶叶</a>
+                                <a href="">蛋糕预订</a>
+                            </div>
+                        </div>
+                        <div class="menu-panel-bd">
+                            <ul>
+                                <li>
+                                    <a href=""><img src="img/0.png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (1).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (2).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (3).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0.jpg"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="" class="menu-panel-btn">
+                            <span>查看全部商家</span>
+                            <em></em>
+                        </a>
+                    </div>
                 </li>
                 <li class="list">
                     <h5>数码家电</h5>
@@ -95,6 +353,39 @@
                     <a href="">易迅</a>
                     <a href="">苏宁易购</a>
                     <span>&gt;</span>
+                    <div class="menu-panel">
+                        <div class="menu-panel-hd">
+                            <h4>热门分类</h4>
+                            <div class="sub-group">
+                                <a href="">美食特产</a>
+                                <a href="">酒水茶叶</a>
+                                <a href="">蛋糕预订</a>
+                            </div>
+                        </div>
+                        <div class="menu-panel-bd">
+                            <ul>
+                                <li>
+                                    <a href=""><img src="img/0.png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (1).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (2).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (3).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0.jpg"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="" class="menu-panel-btn">
+                            <span>查看全部商家</span>
+                            <em></em>
+                        </a>
+                    </div>
                 </li>
                 <li class="list">
                     <h5>数码家电</h5>
@@ -102,23 +393,56 @@
                     <a href="">易迅</a>
                     <a href="">苏宁易购</a>
                     <span>&gt;</span>
+                    <div class="menu-panel">
+                        <div class="menu-panel-hd">
+                            <h4>热门分类</h4>
+                            <div class="sub-group">
+                                <a href="">美食特产</a>
+                                <a href="">酒水茶叶</a>
+                                <a href="">蛋糕预订</a>
+                            </div>
+                        </div>
+                        <div class="menu-panel-bd">
+                            <ul>
+                                <li>
+                                    <a href=""><img src="img/0.png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (1).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (2).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0 (3).png"/></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/0.jpg"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="" class="menu-panel-btn">
+                            <span>查看全部商家</span>
+                            <em></em>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </aside>
 
         <div class="center">
-            <div class="centerImg">
-                <ul class="center-img clearfix">
-                    <li><img src="img/focus1.jpg" alt=""></li>
-                    <li><img src="img/focus2.jpg" alt=""></li>
-                    <li><img src="img/focus3.jpg" alt=""></li>
-                    <li><img src="img/focus4.jpg" alt=""></li>
+            <div class="focus">
+                <ul class="silde">
+                    <li><img src="img/focus3.jpg"/></li>
+                    <li><img src="img/focus1.jpg"/></li>
+                    <li><img src="img/focus2.jpg"/></li>
+                    <li><img src="img/focus4.jpg"/></li>
                 </ul>
-                <ul class="centerImgBottom clearfix">
+                <ul class="silde-page">
+                    <li class="on"><a href="">早市天黑黑四周年庆</a></li>
+                    <li><a href="">办卡领取双肩包</a></li>
                     <li><a href="">音乐消暑 冰爽一夏</a></li>
-                    <li><a href="">音乐消暑 冰爽一夏</a></li>
-                    <li><a href="">音乐消暑 冰爽一夏</a></li>
-                    <li><a href="">音乐消暑 冰爽一夏</a></li>
+                    <li><a href="">腾讯积分会员店</a></li>
                 </ul>
             </div>
             <div class="centerBottom clearfix">
@@ -139,38 +463,177 @@
             <div class="search">
                 <div class="searchBox">
                     <h1>高级搜索</h1>
-                    <input type="text">
-                    <button>搜索</button>
+                    <input type="text" class="searchInput" placeholder="请输入关键字"><br>
+                    <div class="search-all">
+                        <select >
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                        </select>
+                        <select >
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                        </select>
+                        <select >
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                        </select>
+                        <select >
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                        </select>
+                        <select >
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                        </select>
+                        <select >
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                        </select>
+                        <select >
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                            <option value="">场合</option>
+                        </select>
+                    </div>
+                    <button class="searchBtn">搜索</button>
                 </div>
+                <dl class="how">
+                    <dt>彩贝能做什么</dt>
+                    <dd>
+                        <span></span>
+                        <a href="">100彩贝=￥1.00元</a>
+                    </dd>
+                    <dd>
+                        <span></span>
+                        <a href="">尊享优质商旅预订服务</a>
+                    </dd>
+                    <dd>
+                        <span></span>
+                        <a href="">可兑换近千款精美礼品</a>
+                    </dd>
+                </dl>
             </div>
             <div class="enter"></div>
         </aside>
+        <div class="sec2">
+            <h2 class="jf-hd">
+                <span></span>积分商城<span><span class="fc1">100</span>彩贝=¥<span class="fc1">1.00</span>元</span>
+            </h2>
+            <div class="showpic clearfix" id="showpic">
+                <div class="box">
+                    <div class="info">
+                        <div class="pic"><img src="img/pbl/1.jpg"/></div>
+                        <div class="title">布洛克潮鞋，配以欧美潮流服饰，色彩丰富的穿着，尽显男人潮流品味</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="info">
+                        <div class="pic"><img src="img/pbl/2.jpg"/></div>
+                        <div class="title">欧美时尚搭配，无论是朋友聚会，逛街都是焦点</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="info">
+                        <div class="pic"><img src="img/pbl/3.jpg"/></div>
+                        <div class="title">女神的婚纱季，新款婚纱，高端定制！</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="info">
+                        <div class="pic"><img src="img/pbl/4.jpg"/></div>
+                        <div class="title">美尔雅大牌羊毛单西搭配同色休闲裤 色彩统一 品位立显</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <section class="wrap">
+		<footer>
+			<p>
+				<a href="">关于腾讯</a>|
+				<a href="">About Tencent</a>|
+				<a href="">服务条款</a>|
+				<a href="">广告服务</a>|
+				<a href="">腾讯招聘</a>|
+				<a href="">客服中心</a>|
+				<a href="">网站导航</a>
+			</p>
+			<p>Copyright©1998-2015 Tencent. All Rights Reserved.</p>
+			<p>腾讯公司 版权所有</p>
+		</footer>
+	</section>
+    <div class="ad">
+		<img src="img/right.png"/>
+	</div>
+    <div class="rightMenu">
+		<div class="rightMenuBox">
+			<a href="javascript:void(0);" class="backTop">返回顶部</a>
+			<span class="menu-edu rightMenuBtn"></span>
+			<span class="menu-wx rightMenuBtn"></span>
+		</div>
+		<div class="edu-main rightMenuHover">
+			<ul>
+				<li>
+					<p class="edu-img edu-img1"></p>
+					<p class="edu-btm fix">
+						<span class="edu-btmImg edu-step1"></span>
+						<span class="left">登录QQ彩贝<br/>返利商城</span>
+					</p>
+				</li>
+				<li>
+					<p class="edu-img edu-img2"></p>
+					<p class="edu-btm fix">
+						<span class="edu-btmImg edu-step2"></span>
+						<span class="left">去商家购物，免注册、<br/>逾300家认证商家</span>
+					</p>
+				</li>
+				<li>
+					<p class="edu-img edu-img3"></p>
+					<p class="edu-btm fix">
+						<span class="edu-btmImg edu-step3"></span>
+						<span class="left">完成交易<br/>商家核对订单</span>
+					</p>
+				</li>
+				<li>
+					<p class="edu-img edu-img4"></p>
+					<p class="edu-btm fix">
+						<span class="edu-btmImg edu-step4"></span>
+						<span class="left">订单核对有效<br/>彩贝到账</span>
+					</p>
+				</li>
+			</ul>
+		</div>
+		<div class="edu-wx-img rightMenuHover">
+			<img src="img/showqrcode.jpg" width="80" height="80"/>
+			<p>关注彩贝微信，获取优惠信息</p>
+		</div>
+	</div>
     <div id="imgContent">
 
     </div>
 
     <script>
-        // $.ajax({
-        //     type:"get",
-        //     url:"data.txt",
-        //     dataType:"json",
-        //     success:function(data){
-        //         let dataArr = data;
-        //         console.log(data);
-        //         $("#imgContent").innerHTML = dataArr;
-        //     }
-        // })
-        let xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function(){
-            if(xhr.readyState == 4){
-                let dataArr = JSON.stringify(this.responseText);
-                document.getElementById("imgContent").innerHTML = dataArr;
-                
-            }
-        }
-        xhr.open("GET","data.txt",true);
-        xhr.send();
+
     </script>
 </body>
 </html>
